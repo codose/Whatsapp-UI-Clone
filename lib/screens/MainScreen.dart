@@ -79,8 +79,6 @@ class _MainScreenState extends State<MainScreen> {
                 title: Text('Settings'),
               ),
             ]),
-        body: Column(
-          children: [mainScreens[_selectedIndex]],
-        ));
+        body: mainScreens[_selectedIndex]);
   }
 }
