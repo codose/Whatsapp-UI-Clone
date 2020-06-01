@@ -73,10 +73,28 @@ class _StatusScreenState extends State<StatusScreen> {
                                         ]),
                                         Row(
                                           children: <Widget>[
-                                            Icon(MyFlutterApp.camera),
+                                            IconButton(
+                                                iconSize: 36,
+                                                icon: CircleAvatar(
+                                                    backgroundColor:
+                                                        Colors.grey.shade300,
+                                                    child: Icon(
+                                                      MyFlutterApp.camera_fill,
+                                                      size: 15,
+                                                    )),
+                                                onPressed: () {}),
                                             Padding(
-                                                padding: EdgeInsets.all(8.0)),
-                                            Icon(MyFlutterApp.call)
+                                                padding: EdgeInsets.all(2.0)),
+                                            IconButton(
+                                                iconSize: 36,
+                                                icon: CircleAvatar(
+                                                    backgroundColor:
+                                                        Colors.grey.shade300,
+                                                    child: Icon(
+                                                      MyFlutterApp.pencil,
+                                                      size: 15,
+                                                    )),
+                                                onPressed: () {})
                                           ],
                                         )
                                       ]),
